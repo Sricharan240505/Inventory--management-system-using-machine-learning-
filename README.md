@@ -3,30 +3,30 @@
 Managing spare parts inventory across multiple service centers to meet fluctuating market demand is a challenging task. Despite significant investments in spare parts stock, ensuring consistent availability remains a critical issue. This project addresses these challenges using time series analysis and RFID tag technology for real-time inventory tracking 🧮🔍.
 
 ## Project Overview 📝
-The objective is to optimize inventory levels 📦 by forecasting spare parts demand accurately. By incorporating RFID tags for inventory tracking, the project aims to streamline inventory management, reducing both holding costs and stockouts while improving spare parts availability, ultimately enhancing customer satisfaction 🌟.
+The objective is to optimize inventory levels 📦 by accurately forecasting spare parts demand. By incorporating RFID tags for inventory tracking, the project aims to streamline inventory management, reduce holding costs and stockouts, while improving spare parts availability, ultimately enhancing customer satisfaction 🌟.
 
 ## Contents 📚
-- *[Import Stuff](#import-stuff)*: Setting up the necessary libraries, tools, and RFID integration.
-- *[Load the Data](#load-the-data)*: Loading the dataset for analysis, including RFID-based stock data.
-- *[Basic EDA](#basic-eda)*: Initial exploratory data analysis to understand the dataset and RFID-tracked stock movement.
-- *[Data Preprocessing](#data-preprocessing)*: Cleaning and preparing the data, incorporating RFID-based stock flow data for time series analysis.
-- *[Advanced EDA](#advanced-eda)*: Uncovering deeper patterns in the data, including RFID-based inventory movement.
-- *[Time Series Analysis](#time-series-analysis)*: Analyzing trends, seasonality, and RFID-tagged stock flow patterns.
-- *[Time Series Forecasting](#time-series-forecasting)*: Using time series models to predict future demand for spare parts.
-- *[Model Evaluation](#model-evaluation)*: Assessing the performance of various forecasting models.
-- *[RFID Tag Integration](#rfid-tag-integration)*: Highlighting how RFID technology supports real-time stock management.
-- *[Multivariate Analysis](#induct-exogenous-variable-in-sarimax-model)*: Improving the SARIMAX model by incorporating RFID data and other exogenous variables.
+- **[Import Stuff](#import-stuff)**: Setting up the necessary libraries, tools, and RFID integration.
+- **[Load the Data](#load-the-data)**: Loading the dataset for analysis, including RFID-based stock data.
+- **[Basic EDA](#basic-eda)**: Conducting initial exploratory data analysis to understand the dataset and RFID-tracked stock movement.
+- **[Data Preprocessing](#data-preprocessing)**: Cleaning and preparing the data, incorporating RFID-based stock flow data for time series analysis.
+- **[Advanced EDA](#advanced-eda)**: Uncovering deeper patterns in the data, including RFID-based inventory movement.
+- **[Time Series Analysis](#time-series-analysis)**: Analyzing trends, seasonality, and RFID-tagged stock flow patterns.
+- **[Time Series Forecasting](#time-series-forecasting)**: Using time series models to predict future demand for spare parts.
+- **[Model Evaluation](#model-evaluation)**: Assessing the performance of various forecasting models.
+- **[RFID Tag Integration](#rfid-tag-integration)**: Demonstrating how RFID technology supports real-time stock management.
+- **[Multivariate Analysis](#induct-exogenous-variable-in-sarimax-model)**: Improving the SARIMAX model by incorporating RFID data and other exogenous variables.
 
 ## Features in Data 🔍
 Key features used in the analysis, enriched with RFID integration:
-- invoice_date
-- job_card_date
-- business_partner_name
-- vehicle_no
-- vehicle_model
-- current_km_reading
-- invoice_line_text
-- **rfid_tag_data**: Real-time stock tracking information from RFID tags.
+- `invoice_date`
+- `job_card_date`
+- `business_partner_name`
+- `vehicle_no`
+- `vehicle_model`
+- `current_km_reading`
+- `invoice_line_text`
+- **`rfid_tag_data`**: Real-time stock tracking information from RFID tags.
 
 ## Models Deployed 🤖
 For forecasting, the following models were used:
@@ -45,4 +45,4 @@ The models were evaluated using:
 - *Mean Absolute Error (MAE)*
 - *Mean Squared Error (MSE)*
 
-By leveraging time series analysis, RFID tracking, and forecasting, this project provides a comprehensive solution for optimizing inventory levels. The integration of RFID technology ensures real-time data accuracy, helping service centers maintain optimal stock levels, reduce costs, and improve overall customer satisfaction.
+By leveraging time series analysis, RFID tracking, and forecasting, this project provides a comprehensive solution for optimizing inventory levels. The integration of RFID technology ensures real-time data accuracy, helping service centers maintain optimal stock levels, reduce costs, and improve overall customer satisfaction.
